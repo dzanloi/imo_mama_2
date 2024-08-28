@@ -1,0 +1,27 @@
+django-admin startapp <api>   
+djamgo-admin <manage.py> runserver ??to run must be on coting system1
+django-admin <manage.py> makemigration
+
+
+
+pip install djangorestframework
+pip install django
+
+
+
+setting node 
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser ??disabled by the system
+npm -f install @material-ui/core
+npm -f install @material-ui/icons
+
+ npm install --save react@16.13.0 react-dom@16.13.0  ??version working with material-ui
+ npm run dev ??to run must be on vot/front
+
+
+ uaB8Q~6eBlN6~fRPNZglU.JeIxLxSkHbX4zd6auA
+
+
+
+
+ guide https://django-auth-adfs.readthedocs.io/en/latest/azure_ad_config_guide.html
+ commands and variables https://docs.djangoproject.com/en/5.1/ref/contrib/auth/

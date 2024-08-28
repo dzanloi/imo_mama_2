@@ -1,0 +1,63 @@
+
+CREATE TABLE tblinstitutionalaccount (
+    id BIGINT PRIMARY KEY ,  -- Use BIGINT to handle large numbers
+    firstname VARCHAR(50),
+    middle_initial CHAR(1),
+    lastname VARCHAR(50),
+    email VARCHAR(100)
+);
+
+INSERT INTO tblinstitutionalaccount (id, firstname, middle_initial, lastname, email) VALUES
+(222761304, 'Derrick', 'C', 'Binangbang', 'derrick.binangbang@cit.edu'),
+(223344372, 'Christian Gelo', 'D', 'Cadavos', 'christiangelo.cadavos@cit.edu'),
+(222609777, 'Francis Wedemeyer', 'N', 'Dayagro', 'franciswedemeyer.dayagro@cit.edu'),
+(220972493, 'Fiel Louis', 'L', 'Omas-as', 'fiellouis.omas-as@cit.edu'),
+(224869876, 'Avril Nigel', 'M', 'Chua', 'avrilnigel.chua@cit.edu'),
+(225840977, 'Jian Lev', 'C', 'Olamit', 'jianlev.olamit@cit.edu'),
+(221121704, 'Rienel', 'L', 'Basilisco', 'rienel.basilisco@cit.edu'),
+(221018175, 'Charlene', 'R', 'Repuesto', 'charlene.repuesto@cit.edu'),
+(223522765, 'Summer Ishi', NULL, 'Rodrigo', 'summerishi.rodrigo@cit.edu'),
+(225329367, 'Raphael Jay', 'G', 'Escosia', 'raphaeljay.escosia@cit.edu'),
+(221489857, 'Jake', 'H', 'Bajo', 'jake.bajo@cit.edu'),
+(-3, 'Tristan Jame', 'Y', 'Tolentino', 'tristanjame.tolentino@cit.edu'),
+(221432487, 'Slamm Khelmer', 'A', 'Luab', 'slammkhelmer.luab@cit.edu'),
+(222883248, 'Arcelyn', 'S', 'Tequillo', 'arcelyntequillo@cit.edu'),
+(226030379, 'Kaye Aizerner', NULL, 'Evangelista', 'kayeaizerner.evangelista@cit.edu'),
+(220329701, 'Ardel Tioco Jeff', 'L', 'Lauron', 'ardeltiocojeff.lauron@cit.edu'),
+(-4, 'James Kenneth', 'S', 'Acabal', 'jameskenneth.acabal@cit.edu'),
+(222517310, 'Mary Karylle', 'G', 'Delos Reyes', 'marykarylle.delosreyes@cit.edu'),
+(211582841, 'Felisa Melanie Fay', 'G', 'Bascug', 'felisamelanie.fay.bascug@cit.edu'),
+(201818445, 'John Loi', 'D', 'Carreon', 'johnloi.carreon@cit.edu'),
+(225454432, 'Alec Giuseppe', 'K', 'So', 'alecgiuseppe.so@cit.edu'),
+(223975686, 'Philippe Andrei', 'S', 'Dael', 'philippeandrei.dael@cit.edu'),
+(223220538, 'Peter Sylvan', 'L', 'Vecina', 'petersylvan.vecina@cit.edu'),
+(226057778, 'Raya Linley', 'D', 'Jaranilla', 'rayalinley.jaranilla@cit.edu'),
+(221820442, 'Joshua', 'F', 'Napiñas', 'joshua.napinas@cit.edu'),
+(200378588, 'Zedric Marc', 'D', 'Tabinas', 'zedricmarc.tabinas@cit.edu'),
+(220658980, 'Jorash Jonathan', 'C', 'Robillos', 'jorashjonathan.robillos@cit.edu'),
+(223393310, 'Jeremy Brad', 'T', 'Lee', 'jeremybrad.lee@cit.edu'),
+(221717134, 'Angel Sheinen', 'O', 'Cambarijan', 'angelsheinen.cambarijan@cit.edu'),
+(221700813, 'Jake', 'R', 'Clarin', 'jake.clarin@cit.edu'),
+(200137701, 'Guadalue Niña Marie', 'L', 'Obando', 'guadalueninamarie.obando@cit.edu'),
+(224534474, 'Russell Joshua', 'T', 'Palma', 'russelljoshua.palma@cit.edu'),
+(222096279, 'Basil Xavier', 'B', 'Mendoza', 'basilxavier.mendoza@cit.edu'),
+(221664415, 'Alessandra Beatriz', 'A', 'Kisteria', 'alessandrabeatriz.kisteria@cit.edu'),
+(201421505, 'Jan Edward', 'V', 'Abadiano', 'janedward.abadiano@cit.edu'),
+(160917967, 'Ellydhore Gabrylle', 'S', 'Belleza', 'ellydhoregabrylle.belleza@cit.edu'),
+(221926215, 'Jether', 'V', 'Omictin', 'jether.omictin@cit.edu'),
+(-5, 'Ryan Jay Anthony', 'C', 'Timagos', 'ryanjay.anthony.timagos@cit.edu'),
+(-2, 'Moriel Edgar Deandre', NULL, 'Bien', 'morieledgardeandre.bien@cit.edu'),
+(220323591, 'Zhazted Rhixin', 'V', 'Valles', 'zhaztedrhixin.valles@cit.edu'),
+(223222793, 'Kyle', 'T', 'Vasquez', 'kyle.vasquez@cit.edu'),
+(220065180, 'Hanz Chester', 'V', 'Bacus', 'hanzchester.bacus@cit.edu'),
+(222279349, 'Karl Christian', 'P', 'Ajero', 'karlchristian.ajero@cit.edu'),
+(224705387, 'Val Mykel Ceven', 'C', 'Bolante', 'valmykelceven.bolante@cit.edu'),
+(222613464, 'Raphael', 'Z', 'Espelita', 'raphael.espelita@cit.edu'),
+(222964426, 'Uriel Alexis', 'L', 'Parantar', 'urielalexis.parantar@cit.edu'),
+(224665687, 'Julia Laine', 'G', 'Segundo', 'julialaine.segundo@cit.edu'),
+(-1, 'Paul Jes Marc', NULL, 'Flores', 'pauljesmarc.flores@cit.edu'),
+(160475331, 'Francis Benedict', 'Y', 'Chavez', 'francisbenedict.chavez@cit.edu'),
+(220205906, 'Van Woodroe', NULL, 'Perpetua', 'vanwoodroe.perpetua@cit.edu');
+
+-- Select all records ordered by ID
+SELECT * FROM tblinstitutionalaccount
