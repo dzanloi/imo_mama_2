@@ -4,9 +4,9 @@
 
 
 @layer base {
-  body {
-    /* Apply dayon ig type nimo para di na mag mano2 ug usab sa tailwind */
-    @apply font-primary;
-    @apply bg-white text-black leading-loose;
-  }
+    body {
+        /* Apply dayon ig type nimo para di na mag mano2 ug usab sa tailwind */
+        @apply font-primary;
+        @apply bg-white2 text-black leading-loose;
+    }
 }

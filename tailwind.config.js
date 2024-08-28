@@ -28,14 +28,14 @@ module.exports = {
     extend: {
       // CUSTOM COLORS
       colors: {
-        dmaroon: "",
-        maroon: "",
+        dmaroon: "#521018",
+        maroon: "#A41C30",
+        white2: "#FFFEFC",
+        itom: "#28282B",
       },
 
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'header-bg': "url('/headerbackground.png')",
       },
     },
   },
