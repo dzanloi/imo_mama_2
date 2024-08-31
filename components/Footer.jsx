@@ -1,19 +1,89 @@
 import Image from 'next/image'
-import React from 'react'
+import { GrMail } from "react-icons/gr";
+import { 
+  FaDiscord, 
+  FaXTwitter, 
+  FaGithub,
+  FaLocationDot,
+  FaPhone, 
+} from 'react-icons/fa6'
+import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='relative w-full text-white h-[50%] xl:py-6 xl:px-10'>
+    <footer className='relative flex justify-center w-full font-medium pt-28 py-14 text-maroon bg-gradient-to-r from-dmaroon to-maroon'>
+
+        {/* BACKGROUND */}
         <div className='absolute inset-0 z-0'>
-                <Image 
-                    src="/footerbg.png"
-                    alt='background'
-                    width={1700}
-                    height={100}
-                    // objectFit='cover'
-                    // layout='fill'
-                />
+            <Image 
+                src="/footerbg.png"
+                alt='background'
+                // width={1700}
+                // height={1000}
+                layout='fill'
+            />
+        </div>
+
+        {/* cCONTENT*/}
+        <div className="relative z-10 flex flex-col justify-between w-full gap-10 md:flex-row">
+
+          {/* FIRST */}
+          <div className='flex flex-col gap-2 mx-auto'>
+            <p className='mb-5 text-center'>
+              &copy; Copyright 2024 J3 Technologies. <br /> Limited | All Rights Reserved.
+            </p>
+
+            <div className='flex gap-8 mx-auto text-3xl'>
+              <Link href="/">
+                <FaDiscord/>
+              </Link>
+
+              <Link href="/">
+                <FaXTwitter/>
+              </Link>
+
+              <Link href="/">
+                <FaGithub/>
+              </Link>
             </div>
+          </div>
+
+          {/* SECOND */}
+          <div className='flex flex-col gap-2 mx-auto'>
+            <h1 className='text-xl font-bold'>Product</h1>
+            <p>Website</p>
+          </div>
+
+          {/* THIRD */}
+          <div className='flex flex-col gap-2 mx-auto'>
+            <h1 className='text-xl font-bold'>Legal</h1>
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+            <p>FAQS</p>
+          </div>
+
+          {/* FOURTH */}
+          <div className='flex flex-col gap-2 mx-auto'>
+            <h1 className='text-xl font-bold'>Contact Us</h1>
+
+            <div className='flex items-center gap-2'>
+              <FaLocationDot className='text-xl'/>
+              <p>Cebu City, Philippines</p>
+            </div>
+
+            <div className='flex items-center gap-2'>
+              <GrMail className='text-xl'/>
+              <p>elected@cit.edu</p>
+            </div>
+
+            <div className='flex items-center gap-2'>
+              <FaPhone className='text-xl'/>
+              <p>+63 987 654 3210</p>
+            </div>
+          </div>
+
+        </div>
+
     </footer>
   )
 }

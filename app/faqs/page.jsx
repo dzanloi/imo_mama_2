@@ -39,27 +39,23 @@ const Faqs = () => {
   return (
     <section className='min-h-[80vh] flex flex-col justify-center py-12 xl:py-0'>
       <div className="container mx-auto">
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-[60px]' 
-        >
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-[60px]'>
           {questions.map((question, index) => {
             return(
-              <div key={index} className='flex-1 flex-col justify-center gap-6 group'>
+              <div key={index} className='flex-col justify-center flex-1 gap-6 group'>
 
 
                 {/* TOP */}
-                <div className='w-full flex justify-between items-center'>
-                  <div className='text-5xl font-extrabold 
-                      text-dmaroon
-                      text-outline text-transparent 
-                      group-hover:text-outline-hover transition-all duration-500'
-                  >{question.num}</div>
+                <div className='flex items-center justify-between w-full'>
+                  <div className='text-5xl font-extrabold text-transparent transition-all duration-500 text-itom text-outline group-hover:text-outline-hover'>
+                    {question.num}</div>
                   <Link 
                     href={question.href} 
                     className='w-[70px] h-[70px] rounded-full 
                     bg-maroon group-hover:bg-accent transition-all duration-500 flex justify-center
                     items-center hover:-rotate-45'
                   >
-                    <BsArrowDownRight className='text-white2 text-3xl' />
+                    <BsArrowDownRight className='text-3xl text-white2' />
                   </Link>
                 </div>
 
@@ -75,7 +71,7 @@ const Faqs = () => {
                 <p className='text-dmaroon'>{question.answer}</p>
 
                 {/* BORDER */}
-                <div className='border-b border-white/20 w-full'></div>
+                <div className='w-full border-b border-dmaroon'></div>
               </div>
             )
           })}
