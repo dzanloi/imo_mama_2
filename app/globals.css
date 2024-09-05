@@ -7,6 +7,11 @@
     body {
         /* Apply dayon ig type nimo para di na mag mano2 ug usab sa tailwind */
         @apply font-primary;
-        @apply bg-white2 text-itom leading-loose;
+        @apply leading-loose bg-white2 text-itom;
+    }
+  :root {
+
+
+        --radius: 0.5rem
     }
 }

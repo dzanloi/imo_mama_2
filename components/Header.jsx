@@ -6,7 +6,7 @@ import MobileNav from './MobileNav'
 
 const Header = () => {
     return (
-        <header className="relative w-full text-white h-30 xl:py-6 xl:px-10">
+        <header className="relative w-full px-10 py-2 text-white h-30 xl:py-6 xl:px-10">
             {/* BACKGROUND */}
             <div className='absolute inset-0 z-0'>
                 <Image 

@@ -6,6 +6,7 @@ import {
   FaGithub,
   FaLocationDot,
   FaPhone, 
+  FaFacebook
 } from 'react-icons/fa6'
 import Link from 'next/link';
 
@@ -29,13 +30,18 @@ const Footer = () => {
 
           {/* FIRST */}
           <div className='flex flex-col gap-2 mx-auto'>
-            <p className='mb-5 text-center'>
+            <Image 
+              src="/logocolored.svg"
+              width={150}
+              height={150}
+            />
+            <p className='mb-5'>
               &copy; Copyright 2024 J3 Technologies. <br /> Limited | All Rights Reserved.
             </p>
 
             <div className='flex gap-8 mx-auto text-3xl'>
               <Link href="/">
-                <FaDiscord/>
+                <FaFacebook/>
               </Link>
 
               <Link href="/">
@@ -53,7 +59,7 @@ const Footer = () => {
             <h1 className='text-xl font-bold'>Product</h1>
             <p>Website</p>
           </div>
-
+    
           {/* THIRD */}
           <div className='flex flex-col gap-2 mx-auto'>
             <h1 className='text-xl font-bold'>Legal</h1>
