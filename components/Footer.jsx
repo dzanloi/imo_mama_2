@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
 
         {/* cCONTENT*/}
-        <div className="relative z-10 flex flex-col justify-between w-full gap-10 md:flex-row">
+        <div className="relative z-10 grid justify-between w-full grid-cols-2 gap-10 xl:flex">
 
           {/* FIRST */}
           <div className='flex flex-col gap-2 mx-auto'>

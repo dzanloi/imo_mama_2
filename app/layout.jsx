@@ -2,6 +2,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import DashboardNav from "@/components/DashboardNav";
 
 const montserrat = Montserrat({ 
 	subsets: ["latin"],
@@ -15,10 +16,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+	const isLoggedin = false;
+	
 	return (
 		<html lang="en">
 			<body className={montserrat.variable}>
-				<Header/>
+				{isLoggedin ? <DashboardNav/> : <Header/>}
+				
 				{children}
 
 				<Footer/>
