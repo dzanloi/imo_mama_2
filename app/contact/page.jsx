@@ -69,24 +69,28 @@ const Contact = () => {
 
             {/* 4th */}
             <div>
-              <p className='font-semibold'>ORGANIZATION</p>
-              <input type="text" placeholder="eg. CIT-U" className='w-full px-4 py-2 bg-transparent border-2 rounded-xl border-itom/50'/>
+              <p className='font-semibold'>PHONE NUMBER</p>
+              <input type="number" placeholder="eg. 09212321" className='w-full px-4 py-2 bg-transparent border-2 rounded-xl border-itom/50'/>
             </div>
 
             {/* 5th */}
             <div>
               <p className='font-semibold'>NUMBER OF ELIGIBLE VOTERS</p>
-              <input type="email" className='w-full px-4 py-2 bg-transparent border-2 rounded-xl border-itom/50'/>
+              <input type="number" className='w-full px-4 py-2 bg-transparent border-2 rounded-xl border-itom/50'/>
             </div>
 
             {/* 6th */}
             <div>
               <p className='font-semibold'>ESTIMATED VOTE START DATE</p>
-              <input type="text" className='w-full px-4 py-2 bg-transparent border-2 rounded-xl border-itom/50'/>
+              <input type="date" className='w-full px-4 py-2 bg-transparent border-2 rounded-xl border-itom/50'/>
             </div>
           </div>
 
           {/* TEXTAREA */}
+          <div>
+            <p className='font-semibold'>ORGANIZATION</p>
+            <input type="text" placeholder='eg. CIT-U' className='w-full px-4 py-2 bg-transparent border-2 rounded-xl border-itom/50'/>
+          </div>
           <div>
             <p className='font-semibold'>YOUR MESSAGE</p>
             <textarea className="h-[200px] w-full bg-transparent border-2 border-itom/50 rounded-xl py-2 px-4" placeholder="Type your message here."/>

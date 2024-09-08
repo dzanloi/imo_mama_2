@@ -8,10 +8,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Home() {
+
 	return (
 		<section className="w-full h-full">
-
-
 			<div className="flex justify-between w-full h-full px-10">
 
 				{/* TEXT */}
@@ -28,9 +27,10 @@ export default function Home() {
 						<span className="text-maroon">School's #1</span> Trusted Platform for Student Elections <br />in the Philippines
 					</h1>
 
-					<Link href="192.168.22.239:8000/oauth2">
+					<Link href="">
 						<button 
-							className="px-6 py-2 mb-8 font-medium border-2 rounded-full bg-gradient-to-b from-maroon to-dmaroon text-white2 w-fit">
+							className="px-6 py-2 mb-8 font-medium border-2 rounded-full bg-gradient-to-b from-maroon to-dmaroon text-white2 w-fit"
+						>
 							Register as Voter
 						</button>
 					</Link>

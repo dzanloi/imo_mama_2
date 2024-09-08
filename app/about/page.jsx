@@ -107,7 +107,6 @@ const About = () => {
           className='w-full pt-24 bg-white2 text-maroon'
         >
           <h1 className='mb-20 text-6xl font-bold text-center'>How We Work</h1>
-
           {/* 3DIVS */}
           <div className='flex flex-col justify-center gap-20 mx-20 mb-20 xl:flex-row'>
             {/* FIRST */}

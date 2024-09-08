@@ -66,10 +66,11 @@ const MobileNav = () => {
                         )
                     })}
                 </div>
-
-                <button className='px-10 py-1 mt-10 font-medium bg-transparent border-2 rounded-full text-white2 border-white2 hover:bg-white2 hover:border-maroon hover:text-maroon'>
-                    Login
-                </button>
+                <Link href="/dashboard">
+                    <button className='px-10 py-1 mt-10 font-medium bg-transparent border-2 rounded-full text-white2 border-white2 hover:bg-white2 hover:border-maroon hover:text-maroon'>
+                        Login
+                    </button>
+                </Link>
             </SheetContent>
         </Sheet>
     )

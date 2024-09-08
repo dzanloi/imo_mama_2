@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Card = props => {
   return (
     <div className='bg-[#FFFEFC] p-5 py-10 rounded-3xl text-center text-maroon flex flex-col items-center justify-center'>
-        <div className='rounded-full overflow-hidden justify-center border-4 border-maroon w-40 h-40'>
+        <div className='justify-center w-40 h-40 overflow-hidden border-4 rounded-full border-maroon'>
             <Image 
                 src={props.source}
                 width={200}
@@ -14,7 +14,7 @@ const Card = props => {
                 className='object-cover'
             />
         </div>
-        <h1 className='text-2xl font-bold mt-6'>{props.name}</h1>
+        <h1 className='mt-6 text-2xl font-bold'>{props.name}</h1>
         <p className='text-xl font-medium text-maroon/75'>{props.details}</p>
     </div>
   )

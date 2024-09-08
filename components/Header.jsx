@@ -34,10 +34,11 @@ const Header = () => {
                 {/* Hidden if small screens */}
                 <div className="items-center hidden gap-10 xl:flex">
                     <Navigation/>
-
-                    <button className='px-10 py-1 mx-12 font-medium bg-transparent border-2 rounded-full border-white2 hover:bg-white2 hover:border-maroon hover:text-maroon'>
-                            Login
-                    </button>
+                    <Link href="/dashboard">
+                        <button className='px-10 py-1 mx-12 font-medium bg-transparent border-2 rounded-full border-white2 hover:bg-white2 hover:border-maroon hover:text-maroon'>
+                                Login
+                        </button>
+                    </Link>
                 </div>
 
 
