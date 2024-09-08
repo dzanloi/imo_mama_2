@@ -50,10 +50,11 @@ const Sidebar = ({ isExpanded, toggleSidebar }) => {
         <aside 
             className={`
                 ${isExpanded ? 'w-52' : 'w-20'}
-                fixed top-[87px]
+                fixed top-16
                 left-0 h-[80%]
                 bg-red-100 duration-300
-                rounded-b-xl`
+                rounded-br-xl
+                shadow-md`
             }
         >
             <div className='flex-col h-full justify-evenly'>
@@ -67,7 +68,7 @@ const Sidebar = ({ isExpanded, toggleSidebar }) => {
                                     pathname === item.href && 'bg-gradient-to-r from-dmaroon to-maroon text-white2'
                                 } 
                                 ${
-                                    item.bottom ? 'absolute bottom-0 w-full text-center' : ''
+                                    item.bottom ? 'absolute bottom-0 w-full text-center hover:rounded-br-xl' : ''
                                 } 
                                 text-maroon flex items-center hover:bg-gradient-to-r from-dmaroon to-maroon hover:text-white2 
                                 gap-x-4 p-2
