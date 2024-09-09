@@ -16,7 +16,7 @@ const DashboardNav = () => {
   };
 
   return (
-    <>
+    <header>
       <nav className='fixed top-0 left-0 z-50 flex items-center justify-between w-full px-6 py-2 bg-transparent shadow-md bg-white2 text-maroon'>
         {/* LEFT */}
         <div className='flex items-center gap-6'>
@@ -63,7 +63,7 @@ const DashboardNav = () => {
 
       {/* Sidebar component */}
       <Sidebar isExpanded={isExpanded} toggleSidebar={toggleSidebar} />
-    </>
+    </header>
   )
 }
 

@@ -50,6 +50,8 @@ const Sidebar = ({ isExpanded, toggleSidebar }) => {
         <aside 
             className={`
                 ${isExpanded ? 'w-52' : 'w-20'}
+                hidden
+                md:block
                 fixed top-16
                 left-0 h-[80%]
                 bg-red-100 duration-300
@@ -58,7 +60,7 @@ const Sidebar = ({ isExpanded, toggleSidebar }) => {
             }
         >
             <div className='flex-col h-full justify-evenly'>
-                <ul className='flex flex-col justify-center pt-6'>
+                <ul className='flex flex-col justify-center pt-12'>
                     {links.map((item, index) => {
                         return (
                             <Link
@@ -74,7 +76,7 @@ const Sidebar = ({ isExpanded, toggleSidebar }) => {
                                 gap-x-4 p-2
                                 `}
                             >
-                                <div className='py-2 pl-5 text-2xl'>{item.icon}</div>
+                                <div className='py-3 pl-5 text-2xl'>{item.icon}</div>
                                 {isExpanded && <span className='ml-3'>{item.label}</span>}
                             </Link>
                         )
