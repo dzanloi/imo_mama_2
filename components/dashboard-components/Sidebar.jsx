@@ -50,8 +50,8 @@ const Sidebar = ({ isExpanded, toggleSidebar }) => {
         <aside 
             className={`
                 ${isExpanded ? 'w-52' : 'w-20'}
-                hidden
-                md:block
+                scale-0
+                lg:scale-100
                 fixed top-16
                 left-0 h-[80%]
                 bg-red-100 duration-300

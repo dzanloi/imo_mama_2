@@ -7,7 +7,7 @@ const page = () => {
 
   return (
     // TRUE TO ALL PAGES SA DASHBOARD
-    <section className='container mt-28 md:absolute left-80'>
+    <section className='container mt-28 lg:absolute md:left-28 lg:left-48 xl:left-72'>
       {/* GREETINGS */}
       <div className='mb-4 text-dmaroon'>
         <h1 className='text-4xl font-medium'>Hello, <span className='font-bold'>Wang Pok</span></h1>
