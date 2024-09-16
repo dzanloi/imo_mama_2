@@ -92,7 +92,6 @@ const Faqs = () => {
           className='container my-14'
         >
           
-
           <Accordion type='single'>
             {questions.map((item, index) => {
               return (

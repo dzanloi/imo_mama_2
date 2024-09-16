@@ -6,6 +6,14 @@ import React, { useState } from 'react'
 import { CiMenuFries, CiSearch } from 'react-icons/ci';
 import { PiBellLight } from "react-icons/pi";
 import Sidebar from './Sidebar';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 
 const DashboardNav = () => {
@@ -48,7 +56,20 @@ const DashboardNav = () => {
 
         {/* RIGHT */}
         <div className='flex items-center justify-start gap-4 pr-8'>
-          <PiBellLight className='text-3xl font-bold rounded-full hover:bg-white2/20'/>
+          <DropdownMenu>
+            <DropdownMenuTrigger>
+              <PiBellLight className='text-3xl font-bold rounded-full hover:bg-white2/20'/>
+            </DropdownMenuTrigger>
+
+            <DropdownMenuContent>
+              <DropdownMenuItem>1</DropdownMenuItem>
+              <DropdownMenuItem>2</DropdownMenuItem>
+              <DropdownMenuItem>3</DropdownMenuItem>
+              <DropdownMenuItem>4</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+
           <div className='justify-center overflow-hidden border-4 rounded-full w-14 h-14 border-maroon'>
               <Image 
                   src="/dobby.png"

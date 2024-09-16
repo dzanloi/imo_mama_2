@@ -1,6 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Image from 'next/image'
+import {
+    Dialog,
+    DialogTrigger,
+    DialogContent,
+    DialogTitle,
+    DialogDescription,
+} from "@/components/ui/dialog";
 
 
 const CandidateCard = props => {
@@ -23,9 +30,18 @@ const CandidateCard = props => {
                 Vote
             </button>
 
-            <button className='container px-6 py-1 text-sm border rounded-full border-maroon text-maroon bg-white2 hover:bg-maroon hover:text-white2'>
-                View Details
-            </button>
+
+
+            <Dialog>
+                <DialogTrigger className='container px-6 py-1 text-sm border rounded-full border-maroon text-maroon bg-white2 hover:bg-maroon hover:text-white2'>
+                    View Details
+                </DialogTrigger>
+
+                <DialogContent>
+                    <DialogTitle>This is your candidate profile</DialogTitle>
+                    <DialogDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit ab excepturi laudantium.</DialogDescription>
+                </DialogContent>
+            </Dialog>
         </div>
     </div>
   )

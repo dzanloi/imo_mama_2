@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={montserrat.variable}>
-				{isLoggedin ? <DashboardNav/>: <Header/>}
+				{isLoggedin ? <DashboardNav/> : <Header/>}
 				
 				{children}
 
